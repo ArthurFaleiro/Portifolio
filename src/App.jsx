@@ -96,7 +96,7 @@ function App() {
                 <h4>Sistema de Gestão de Viagens</h4>
                 <p style={{ fontSize: '0.8rem', opacity: 0.8 }}>Sistema para gerenciamento de itinerários e destinos.</p>
                 <div style={{ marginTop: '10px' }}>
-                  <span className="tag">Java</span><span className="tag">- React</span>
+                  <span className="tag">Java</span><span className="tag"> - </span><span className="tag">React</span>
                 </div>
               </div>
               
@@ -104,7 +104,7 @@ function App() {
                 <h4>Sistema de Gestão de Petshop</h4>
                 <p style={{ fontSize: '0.8rem', opacity: 0.8 }}>Sistema para gerenciamento de produtos e serviços de uma petshop.</p>
                 <div style={{ marginTop: '10px' }}>
-                  <span className="tag">Java</span><span className="tag">- React</span>
+                  <span className="tag">Java</span><span className="tag"> - </span><span className="tag">React</span>
                 </div>
               </div>
 
@@ -112,7 +112,7 @@ function App() {
                 <h4>Sistema de Concessionária de Veículos StreetWise</h4>
                 <p style={{ fontSize: '0.8rem', opacity: 0.8 }}>Sistema padrão para uma concessionária fictícia de veículos elétricos.</p>
                 <div style={{ marginTop: '10px' }}>
-                  <span className="tag">HTML</span><span className="tag">- React</span>
+                  <span className="tag">HTML</span><span className="tag"> - </span><span className="tag">React</span>
                 </div>
               </div>
 
@@ -120,7 +120,7 @@ function App() {
                 <h4>Power BI de Clash Royale</h4>
                 <p style={{ fontSize: '0.8rem', opacity: 0.8 }}>Dashboard com informações das cartas do jogo Clash Royale.</p>
                 <div style={{ marginTop: '10px' }}>
-                  <span className="tag">Power BI</span><span className="tag">- Data Analytics</span>
+                  <span className="tag">Power BI</span><span className="tag"> - </span><span className="tag">Data Analytics</span>
                 </div>
               </div>
             </div>
