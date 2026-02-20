@@ -16,7 +16,7 @@ function App() {
       </nav>
 
       <main className="main-layout">
-        {/* COLUNA DA FOTO E INFOS FIXAS (ESQUERDA) */}
+        {}
         <aside className="left-column">
           <div className="glass-card" style={{ padding: '10px' }}>
             <img 
@@ -44,13 +44,13 @@ function App() {
           </a>
         </aside>
 
-        {/* CONTEÚDO PRINCIPAL (DIREITA) */}
+        {}
         <section className="right-content">
           <div style={{ marginBottom: '60px' }}>
             <span className="move-badge">EU SOU</span>
             <h1 style={{ fontSize: '3.5rem', margin: '20px 0', lineHeight: '1.2' }}>
               Designer & Dev <br/>
-              <span style={{ color: '#FF007F' }}>Full Stack</span> apaixonado por trazer design para a vida.
+              <span style={{ color: '#FF007F' }}>Full Stack</span> apaixonado por inovação, tecnologia e design.
             </h1>
             <p style={{ opacity: 0.6, marginBottom: '15px' }}>O QUE ME MOVE</p>
             <div>
@@ -58,17 +58,22 @@ function App() {
               <span className="move-badge">Construir</span>
               <span className="move-badge">Resolver</span>
               <span className="move-badge">Evoluir</span>
+              <span className="move-badge">Descobrir</span>
+              <span className="move-badge">Pesquisar</span>
             </div>
           </div>
 
-          {/* SEÇÃO DE EXPERIÊNCIAS */}
+          {/* EXPERIÊNCIAS */}
           <div id="experiencia">
             <h3 style={{ opacity: 0.5, fontSize: '0.8rem', letterSpacing: '2px', marginBottom: '20px' }}>EXPERIÊNCIAS</h3>
             <div className="glass-card">
               <p style={{ color: '#FF007F', fontSize: '0.75rem', fontWeight: 'bold' }}>2024 - MOMENTO</p>
               <h4>Assistente de Suporte TI - Hospital Santa Casa de Porto Alegre</h4>
               <ul style={{ fontSize: '0.85rem', paddingLeft: '20px', opacity: 0.8 }}>
-                <li>Manutenção de hardware e suporte via sistema TASY.</li>
+                <li>Sistema TASY;</li>
+                <li>Manutenção de impressorass, telefones e computadores;</li>
+                <li>Abertura de Ordens de Serviço para a equipe de sistemas e suporte;</li>
+                <li>Planilhas Excel e pacote Office;</li>
                 <li>Criação de usuários, grupos de e-mail e atendimento via WhatsApp bot.</li>
               </ul>
             </div>
@@ -77,7 +82,7 @@ function App() {
               <p style={{ color: '#FF007F', fontSize: '0.75rem', fontWeight: 'bold' }}>2022 - 2023</p>
               <h4>Jovem Aprendiz - Appmax</h4>
               <ul style={{ fontSize: '0.85rem', paddingLeft: '20px', opacity: 0.8 }}>
-                <li>Suporte administrativo nos setores Jurídico e Credenciamento.</li>
+                <li>Suporte administrativo nos setores Jurídico e Credenciamento;</li>
                 <li>Lançamento de notas e organização de documentos.</li>
               </ul>
             </div>
@@ -95,6 +100,14 @@ function App() {
                 </div>
               </div>
               
+              <div className="glass-card">
+                <h4>Sistema de Petshop</h4>
+                <p style={{ fontSize: '0.8rem', opacity: 0.8 }}>Sistema completo para gerenciamento de produtos e serviços de petshop.</p>
+                <div style={{ marginTop: '10px' }}>
+                  <span className="tag">Java</span><span className="tag">React</span>
+                </div>
+              </div>
+
               <div className="glass-card">
                 <h4>Power BI Clash Royale</h4>
                 <p style={{ fontSize: '0.8rem', opacity: 0.8 }}>Dashboard dinâmico com análise de dados de jogo e performance.</p>
