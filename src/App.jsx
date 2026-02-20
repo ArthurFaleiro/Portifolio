@@ -36,7 +36,7 @@ function App() {
             <p style={{ fontSize: '0.7rem', opacity: 0.6, margin: '0 0 5px' }}>FORMAÇÃO</p>
             <p style={{ margin: 0, fontWeight: 'bold' }}>Engenharia de Software</p>
             <p style={{ margin: 0, fontSize: '0.8rem' }}>PUCRS (Noturno)</p>
-            <p style={{ fontSize: '0.75rem', color: '#FF007F', marginTop: '5px', fontWeight: 'bold' }}>Prev: 02/2027</p>
+            <p style={{ fontSize: '0.75rem', color: '#FF007F', marginTop: '5px', fontWeight: 'bold' }}>Prev. conclusão: 02/2027</p>
           </div>
 
           <a href="/Currículo 5.pdf.pdf" download className="nav-box" style={{ display: 'block', textAlign: 'center', textDecoration: 'none' }}>
