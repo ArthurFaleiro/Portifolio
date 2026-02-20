@@ -132,10 +132,19 @@ function App() {
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="30" alt="SQL"/>
               </div>
               <div className="skill-item" data-name="Power BI">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Microsoft_Power_BI_Logo.svg" width="30" alt="PBI"/>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/3840px-New_Power_BI_Logo.svg.png" width="30" alt="PBI"/>
               </div>
               <div className="skill-item" data-name="JavaScript">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="30" alt="JS"/>
+              </div>
+              <div className="skill-item" data-name="HTML">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="30" alt="HTML"/>
+              </div>
+              <div className="skill-item" data-name="Python">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="30" alt="Python"/>
+              </div>
+              <div className="skill-item" data-name="CSS">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="30" alt="CSS"/>
               </div>
             </div>
           </div>
