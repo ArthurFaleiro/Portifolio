@@ -177,3 +177,44 @@ footer {
   .main-layout { flex-direction: column; padding: 100px 15px; }
   .left-column { width: 100%; position: relative; top: 0; margin-bottom: 40px; }
 }
+
+/* ESTILOS DA SEÇÃO LET'S TALK */
+.talk-title {
+  font-size: 5rem;
+  font-weight: 200;
+  margin: 0 0 50px;
+  text-align: left;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.contact-input, .contact-textarea {
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.contact-textarea {
+  height: 100px;
+  resize: none;
+}
+
+.submit-btn {
+  background: white !important;
+  color: black !important;
+  font-weight: bold !important;
+  cursor: pointer;
+  border: none !important;
+}
+
+@media (max-width: 900px) {
+  .talk-title { font-size: 3rem; }
+  .contact-grid { grid-template-columns: 1fr; }
+}

@@ -19,7 +19,6 @@ function App() {
         {/* COLUNA ESQUERDA (FIXA) */}
         <aside className="left-column">
           <div className="glass-card" style={{ padding: '10px' }}>
-            {/* Adicionada a classe arthur-photo para controle total no CSS */}
             <img 
               src="/Foto.jpg" 
               alt="Arthur Faleiro" 
@@ -37,10 +36,11 @@ function App() {
             <p style={{ fontSize: '0.7rem', opacity: 0.6, margin: '0 0 5px' }}>FORMAÇÃO</p>
             <p style={{ margin: 0, fontWeight: 'bold' }}>Engenharia de Software</p>
             <p style={{ margin: 0, fontSize: '0.8rem' }}>PUCRS (Noturno)</p>
-            <p style={{ fontSize: '0.75rem', color: '#FF007F', marginTop: '5px', fontWeight: 'bold' }}>Prev. conclusão: 02/2027</p>
+            <p style={{ fontSize: '0.75rem', color: '#FF007F', marginTop: '5px', fontWeight: 'bold' }}>Prev. conclusão: 2027</p>
           </div>
 
-          <a href="/Currículo 5.pdf.pdf" download className="nav-box" style={{ display: 'block', textAlign: 'center', textDecoration: 'none' }}>
+          {/* LINK ATUALIZADO PARA O NOVO CURRÍCULO */}
+          <a href="/Currículo_Arthur.pdf" download className="nav-box" style={{ display: 'block', textAlign: 'center', textDecoration: 'none' }}>
             📄 Baixar Currículo PDF
           </a>
         </aside>
@@ -61,25 +61,34 @@ function App() {
             </div>
           </div>
 
-          {/* EXPERIÊNCIAS */}
+          {/* SEÇÃO EXPERIÊNCIAS (RECUPERADA) */}
           <div id="experiencia" style={{ marginBottom: '50px' }}>
             <h3 style={{ opacity: 0.5, fontSize: '0.8rem', letterSpacing: '2px', marginBottom: '20px' }}>EXPERIÊNCIAS</h3>
+            
             <div className="glass-card">
               <p style={{ color: '#FF007F', fontSize: '0.75rem', fontWeight: 'bold' }}>2024 - MOMENTO</p>
               <h4>Assistente de Suporte TI - Santa Casa de Porto Alegre</h4>
               <ul style={{ fontSize: '0.85rem', paddingLeft: '20px', opacity: 0.8, lineHeight: '1.6' }}>
-                <li>Suporte ao sistema TASY e manutenção de hardware.</li>
-                <li>Abertura de ordens de serviço e gestão de usuários.</li>
+                <li>Suporte ao sistema TASY e manutenção de hardware[cite: 10, 93].</li>
+                <li>Abertura de ordens de serviço e gestão de usuários[cite: 10, 93].</li>
+              </ul>
+            </div>
+
+            {/* EXPERIÊNCIA APPMAX RECUPERADA */}
+            <div className="glass-card">
+              <p style={{ color: '#FF007F', fontSize: '0.75rem', fontWeight: 'bold' }}>2022 - 2023</p>
+              <h4>Jovem Aprendiz - Appmax</h4>
+              <ul style={{ fontSize: '0.85rem', paddingLeft: '20px', opacity: 0.8, lineHeight: '1.6' }}>
+                <li>Credenciamento de Empresas (3 meses)[cite: 9, 90].</li>
+                <li>Atuação no setor Jurídico / Débito e Crédito (1 ano e 9 meses)[cite: 9, 91].</li>
               </ul>
             </div>
           </div>
 
-          {/* PROJETOS - Com estrutura segura */}
+          {/* SEÇÃO PROJETOS */}
           <div id="projetos">
             <h3 style={{ opacity: 0.5, fontSize: '0.8rem', letterSpacing: '2px', marginBottom: '20px' }}>PROJETOS EM DESTAQUE</h3>
             <div className="grid-2">
-              
-              {/* Projeto 1 - Viagens */}
               <div className="glass-card">
                 <h4>Sistema de Gestão de Viagens</h4>
                 <p style={{ fontSize: '0.8rem', opacity: 0.7 }}>Gerenciamento de itinerários e destinos.</p>
@@ -93,7 +102,6 @@ function App() {
                 </a>
               </div>
 
-              {/* Projeto 2 - Petshop */}
               <div className="glass-card">
                 <h4>Sistema de Gestão de Petshop</h4>
                 <p style={{ fontSize: '0.8rem', opacity: 0.7 }}>Controle de produtos e serviços para pets.</p>
@@ -107,7 +115,6 @@ function App() {
                 </a>
               </div>
 
-              {/* Projeto 3 - StreetWise */}
               <div className="glass-card">
                 <h4>StreetWise Concessionária</h4>
                 <p style={{ fontSize: '0.8rem', opacity: 0.7 }}>E-commerce fictício de veículos elétricos.</p>
@@ -121,7 +128,6 @@ function App() {
                 </a>
               </div>
 
-              {/* Projeto 4 - Clash */}
               <div className="glass-card">
                 <h4>Power BI Clash Royale</h4>
                 <p style={{ fontSize: '0.8rem', opacity: 0.7 }}>Dashboard interativo de Data Analytics.</p>
@@ -133,14 +139,30 @@ function App() {
                   Acessar projeto
                 </a>
               </div>
-
             </div>
           </div>
         </section>
       </main>
 
-      <footer id="contato">
-        <p>© 2026 Arthur Faleiro Barbosa. All Rights Reserved.</p>
+      {/* SEÇÃO LET'S TALK (RECUPERADA) */}
+      <footer id="contato" style={{ padding: '100px 10%' }}>
+        <h2 className="talk-title">Let's talk</h2>
+        <div className="contact-grid">
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
+            <a href="https://linkedin.com/in/arthur-faleiro-a57b49121" target="_blank" className="nav-box" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/ArthurFaleiro" target="_blank" className="nav-box" rel="noreferrer">GitHub</a>
+            <a href="https://wa.me/5551992444380" target="_blank" className="nav-box" rel="noreferrer">WhatsApp</a>
+          </div>
+          <div className="glass-card">
+            <p style={{ marginBottom: '20px', fontWeight: 'bold' }}>Me envie uma mensagem</p>
+            <form style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              <input type="text" placeholder="Seu nome" className="contact-input" />
+              <textarea placeholder="Sua mensagem..." className="contact-textarea"></textarea>
+              <button type="submit" className="nav-box submit-btn">Enviar mensagem</button>
+            </form>
+          </div>
+        </div>
+        <p style={{ marginTop: '60px', opacity: 0.3, fontSize: '0.8rem', textAlign: 'center' }}>© 2026 Arthur Faleiro Barbosa. All Rights Reserved.</p>
       </footer>
     </div>
   );
