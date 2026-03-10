@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div id="home">
-      {/* NAVBAR EM CAIXINHAS SEPARADAS */}
+      {/* NAVBAR */}
       <nav className="navbar">
         <div style={{ fontWeight: '800', letterSpacing: '1px' }}>ARTHUR FALEIRO BARBOSA</div>
         <div className="nav-box-container">
@@ -16,13 +16,14 @@ function App() {
       </nav>
 
       <main className="main-layout">
-        {}
+        {/* COLUNA ESQUERDA (FIXA) */}
         <aside className="left-column">
           <div className="glass-card" style={{ padding: '10px' }}>
+            {/* Adicionada a classe arthur-photo para controle total no CSS */}
             <img 
               src="/Foto.jpg" 
               alt="Arthur Faleiro" 
-              style={{ width: '100%', borderRadius: '15px' }} 
+              className="arthur-photo"
               onError={(e) => e.target.src="https://via.placeholder.com/300x400?text=Sua+Foto"}
             />
           </div>
@@ -44,160 +45,102 @@ function App() {
           </a>
         </aside>
 
-        {}
+        {/* CONTEÚDO DA DIREITA */}
         <section className="right-content">
           <div style={{ marginBottom: '60px' }}>
             <span className="move-badge">EU SOU</span>
             <h1 style={{ fontSize: '3.5rem', margin: '20px 0', lineHeight: '1.2' }}>
               Designer & Dev <br/>
-              <span style={{ color: '#FF007F' }}>Full Stack</span> apaixonado por inovação, tecnologia e design.
+              <span style={{ color: '#FF007F' }}>Full Stack</span> apaixonado por inovação.
             </h1>
-            <p style={{ opacity: 0.6, marginBottom: '15px' }}>O QUE ME MOVE</p>
-            <div>
+            <div style={{ marginTop: '20px' }}>
               <span className="move-badge">Inovar</span>
               <span className="move-badge">Construir</span>
               <span className="move-badge">Resolver</span>
               <span className="move-badge">Evoluir</span>
-              <span className="move-badge">Descobrir</span>
-              <span className="move-badge">Pesquisar</span>
             </div>
           </div>
 
           {/* EXPERIÊNCIAS */}
-          <div id="experiencia">
+          <div id="experiencia" style={{ marginBottom: '50px' }}>
             <h3 style={{ opacity: 0.5, fontSize: '0.8rem', letterSpacing: '2px', marginBottom: '20px' }}>EXPERIÊNCIAS</h3>
             <div className="glass-card">
               <p style={{ color: '#FF007F', fontSize: '0.75rem', fontWeight: 'bold' }}>2024 - MOMENTO</p>
-              <h4>Assistente de Suporte TI - Hospital Santa Casa de Porto Alegre</h4>
-              <ul style={{ fontSize: '0.85rem', paddingLeft: '20px', opacity: 0.8 }}>
-                <li>Sistema TASY;</li>
-                <li>Manutenção de impressoras, telefones e computadores;</li>
-                <li>Abertura de Ordens de Serviço para a equipe de sistemas e suporte;</li>
-                <li>Planilhas Excel e pacote Office;</li>
-                <li>Criação de usuários, grupos de e-mail e atendimento via WhatsApp bot.</li>
-              </ul>
-            </div>
-            
-            <div className="glass-card">
-              <p style={{ color: '#FF007F', fontSize: '0.75rem', fontWeight: 'bold' }}>2022 - 2023</p>
-              <h4>Jovem Aprendiz - Appmax</h4>
-              <ul style={{ fontSize: '0.85rem', paddingLeft: '20px', opacity: 0.8 }}>
-                <li>Suporte administrativo nos setores Jurídico e Credenciamento;</li>
-                <li>Lançamento de notas e organização de documentos.</li>
+              <h4>Assistente de Suporte TI - Santa Casa de Porto Alegre</h4>
+              <ul style={{ fontSize: '0.85rem', paddingLeft: '20px', opacity: 0.8, lineHeight: '1.6' }}>
+                <li>Suporte ao sistema TASY e manutenção de hardware.</li>
+                <li>Abertura de ordens de serviço e gestão de usuários.</li>
               </ul>
             </div>
           </div>
 
-          {/* SEÇÃO DE PROJETOS EM GRID */}
-          <div id="projetos" style={{ marginTop: '50px' }}>
+          {/* PROJETOS - Com estrutura segura */}
+          <div id="projetos">
             <h3 style={{ opacity: 0.5, fontSize: '0.8rem', letterSpacing: '2px', marginBottom: '20px' }}>PROJETOS EM DESTAQUE</h3>
             <div className="grid-2">
+              
+              {/* Projeto 1 - Viagens */}
               <div className="glass-card">
                 <h4>Sistema de Gestão de Viagens</h4>
-                <p style={{ fontSize: '0.8rem', opacity: 0.8 }}>Sistema para gerenciamento de itinerários e destinos.</p>
+                <p style={{ fontSize: '0.8rem', opacity: 0.7 }}>Gerenciamento de itinerários e destinos.</p>
                 <div className="project-tags">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" className="tag-icon" title="Java" alt="Java"/>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="tag-icon" title="React" alt="React"/>
-                  </div>
-                    <a href="https://github.com/ArthurFaleiro/Sistema-de-Viagens" target="_blank" rel="noreferrer" className="btn-project">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="16" style={{ filter: 'invert(1)', marginRight: '8px' }} alt=""/>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" className="tag-icon" alt="Java"/>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="tag-icon" alt="React"/>
+                </div>
+                <a href="https://github.com/ArthurFaleiro/Sistema-de-Viagens" target="_blank" rel="noreferrer" className="btn-project">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="14" style={{ filter: 'invert(1)', marginRight: '8px' }} alt=""/>
                   Acessar projeto
                 </a>
               </div>
-              
+
+              {/* Projeto 2 - Petshop */}
               <div className="glass-card">
                 <h4>Sistema de Gestão de Petshop</h4>
-                <p style={{ fontSize: '0.8rem', opacity: 0.8 }}>Sistema para gerenciamento de produtos e serviços de uma petshop.</p>
+                <p style={{ fontSize: '0.8rem', opacity: 0.7 }}>Controle de produtos e serviços para pets.</p>
                 <div className="project-tags">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" className="tag-icon" title="Java" alt="Java"/>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="tag-icon" title="React" alt="React"/>
-                    </div>
-                          <a href="https://github.com/ArthurFaleiro/Sistema-de-Petshop" target="_blank" rel="noreferrer" className="btn-project">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="16" style={{ filter: 'invert(1)', marginRight: '8px' }} alt=""/>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" className="tag-icon" alt="Java"/>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="tag-icon" alt="React"/>
+                </div>
+                <a href="https://github.com/ArthurFaleiro/Sistema-de-Petshop" target="_blank" rel="noreferrer" className="btn-project">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="14" style={{ filter: 'invert(1)', marginRight: '8px' }} alt=""/>
                   Acessar projeto
                 </a>
               </div>
 
+              {/* Projeto 3 - StreetWise */}
               <div className="glass-card">
-                <h4>Sistema de Concessionária de Veículos StreetWise</h4>
-               <p style={{ fontSize: '0.8rem', opacity: 0.8 }}>Sistema padrão para uma concessionária fictícia de veículos elétricos.</p>
-                  <div className="project-tags">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" className="tag-icon" title="HTML5" alt="HTML"/>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="tag-icon" title="React" alt="React"/>
-                          </div>
-                              <a href="https://github.com/ArthurFaleiro/Sistema-StreetWise" target="_blank" rel="noreferrer" className="btn-project">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="16" style={{ filter: 'invert(1)', marginRight: '8px' }} alt=""/>
+                <h4>StreetWise Concessionária</h4>
+                <p style={{ fontSize: '0.8rem', opacity: 0.7 }}>E-commerce fictício de veículos elétricos.</p>
+                <div className="project-tags">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" className="tag-icon" alt="HTML"/>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="tag-icon" alt="React"/>
+                </div>
+                <a href="https://github.com/ArthurFaleiro/Sistema-StreetWise" target="_blank" rel="noreferrer" className="btn-project">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="14" style={{ filter: 'invert(1)', marginRight: '8px' }} alt=""/>
                   Acessar projeto
                 </a>
               </div>
 
-          <div className="glass-card">
-            <h4>Power BI de Clash Royale</h4>
-            <p style={{ fontSize: '0.8rem', opacity: 0.8 }}>Dashboard com informações das cartas do jogo Clash Royale.</p>
-            <div className="project-tags">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/3840px-New_Power_BI_Logo.svg.png" className="tag-icon" title="Power BI" alt="PBI"/>
-            </div>
-            <a href="https://github.com/ArthurFaleiro/ClashRoyale" target="_blank" rel="noreferrer" className="btn-project">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="16" style={{ filter: 'invert(1)', marginRight: '8px' }} alt=""/>
-              Acessar projeto
-            </a>
-          </div>
+              {/* Projeto 4 - Clash */}
+              <div className="glass-card">
+                <h4>Power BI Clash Royale</h4>
+                <p style={{ fontSize: '0.8rem', opacity: 0.7 }}>Dashboard interativo de Data Analytics.</p>
+                <div className="project-tags">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/3840px-New_Power_BI_Logo.svg.png" className="tag-icon" alt="PBI"/>
+                </div>
+                <a href="https://github.com/ArthurFaleiro/ClashRoyale" target="_blank" rel="noreferrer" className="btn-project">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="14" style={{ filter: 'invert(1)', marginRight: '8px' }} alt=""/>
+                  Acessar projeto
+                </a>
+              </div>
 
-        </div>
-      </div>
-
-          {/* SEÇÃO DE HABILIDADES */}
-          <div id="habilidades" style={{ marginTop: '50px' }}>
-            <h3 style={{ opacity: 0.5, fontSize: '0.8rem', letterSpacing: '2px', marginBottom: '20px' }}>SKILLS & TECNOLOGIAS</h3>
-            <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap' }}>
-              <div className="skill-item" data-name="Java">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="30" alt="Java"/>
-              </div>
-              <div className="skill-item" data-name="React">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="30" alt="React"/>
-              </div>
-              <div className="skill-item" data-name="SQL">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="30" alt="SQL"/>
-              </div>
-              <div className="skill-item" data-name="Power BI">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/3840px-New_Power_BI_Logo.svg.png" width="30" alt="PBI"/>
-              </div>
-              <div className="skill-item" data-name="JavaScript">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="30" alt="JS"/>
-              </div>
-              <div className="skill-item" data-name="HTML">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="30" alt="HTML"/>
-              </div>
-              <div className="skill-item" data-name="Python">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="30" alt="Python"/>
-              </div>
-              <div className="skill-item" data-name="CSS">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="30" alt="CSS"/>
-              </div>
             </div>
           </div>
         </section>
       </main>
 
-      {/* FOOTER E CONTATO */}
-      <footer id="contato" style={{ padding: '100px 10%' }}>
-        <h2 style={{ fontSize: '5rem', fontWeight: '200', margin: '0 0 50px' }}>Let's talk</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '50px' }}>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-            <a href="https://linkedin.com/in/arthur-faleiro-a57b49121" target="_blank" className="nav-box" rel="noreferrer">LinkedIn</a>
-            <a href="https://github.com/ArthurFaleiro" target="_blank" className="nav-box" rel="noreferrer">GitHub</a>
-            <a href="https://wa.me/5551992444380" target="_blank" className="nav-box" rel="noreferrer">WhatsApp</a>
-          </div>
-          <div className="glass-card">
-            <p style={{ marginBottom: '20px', fontWeight: 'bold' }}>Me envie uma mensagem</p>
-            <form style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-              <input type="text" placeholder="Seu nome" style={{ padding: '12px', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', color: 'white', borderRadius: '8px' }} />
-              <textarea placeholder="Sua mensagem..." style={{ padding: '12px', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', color: 'white', borderRadius: '8px', height: '100px', resize: 'none' }}></textarea>
-              <button type="submit" className="nav-box" style={{ background: 'white', color: 'black', fontWeight: 'bold', cursor: 'pointer', border: 'none' }}>Enviar mensagem</button>
-            </form>
-          </div>
-        </div>
-        <p style={{ marginTop: '60px', opacity: 0.3, fontSize: '0.8rem', textAlign: 'center' }}>© 2026 Arthur Faleiro Barbosa. All Rights Reserved.</p>
+      <footer id="contato">
+        <p>© 2026 Arthur Faleiro Barbosa. All Rights Reserved.</p>
       </footer>
     </div>
   );

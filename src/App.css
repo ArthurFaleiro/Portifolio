@@ -1,6 +1,11 @@
-/* FUNDO ANIMADO: ROXO, AZUL E ROSA */
+/* RESET BÁSICO - Garante que nada herde tamanhos indesejados */
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
 body {
-  margin: 0;
   font-family: 'Inter', sans-serif;
   color: white;
   background: linear-gradient(-45deg, #9600CD, #5416B4, #FF007F, #2813B2);
@@ -8,6 +13,7 @@ body {
   animation: gradientBG 12s ease infinite;
   min-height: 100vh;
   scroll-behavior: smooth;
+  overflow-x: hidden; /* Evita barra de rolagem horizontal */
 }
 
 @keyframes gradientBG {
@@ -16,7 +22,7 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/* NAVBAR EM CAIXINHAS SEPARADAS */
+/* NAVBAR - Mantida fixa no topo */
 .navbar {
   position: fixed;
   top: 0;
@@ -25,10 +31,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 8%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(15px);
-  z-index: 1000;
-  box-sizing: border-box;
+  z-index: 2000;
 }
 
 .nav-box-container { display: flex; gap: 15px; }
@@ -37,48 +42,138 @@ body {
   text-decoration: none;
   color: white;
   background: rgba(255, 255, 255, 0.1);
-  padding: 10px 22px;
+  padding: 8px 18px;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.3s ease;
 }
 
-/* EFEITO DE VOLUME (ZOOM) */
-.nav-box:hover, .glass-card:hover, .skill-item:hover, .submit-btn:hover {
-  transform: scale(1.1);
-  background: rgba(255, 0, 127, 0.35);
+.nav-box:hover {
+  transform: scale(1.05);
+  background: rgba(255, 0, 127, 0.3);
   border-color: #FF007F;
-  box-shadow: 0 10px 20px rgba(255, 0, 127, 0.4);
 }
 
-/* LAYOUT: COLUNA FIXA E CONTEÚDO */
+/* LAYOUT PRINCIPAL - USANDO FLEX PARA EVITAR SOBREPOSIÇÃO */
 .main-layout {
-  display: grid;
-  grid-template-columns: 350px 1fr;
-  gap: 60px;
+  display: flex;
+  gap: 50px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 140px 20px;
+  padding: 120px 20px; /* Padding top compensa a navbar fixa */
+  align-items: flex-start; /* Alinha o conteúdo ao topo */
 }
 
-.left-column { position: sticky; top: 120px; height: fit-content; }
+/* COLUNA ESQUERDA (FIXA) */
+.left-column { 
+  width: 320px; /* Tamanho fixo e controlado */
+  flex-shrink: 0; /* Impede que a coluna amasse em telas menores */
+  position: sticky; 
+  top: 100px; 
+  height: fit-content; 
+  z-index: 10;
+}
 
+/* Estilo específico para a imagem do Arthur */
+.arthur-photo {
+  width: 100%; 
+  border-radius: 15px; 
+  display: block;
+}
+
+/* CONTEÚDO DA DIREITA */
+.right-content {
+  flex-grow: 1; /* Ocupa o resto do espaço disponível */
+  min-width: 0; /* Impede que o conteúdo estoure o flex-container */
+}
+
+/* ESTILO DOS CARDS (Glassmorphism) */
 .glass-card {
   background: rgba(0, 0, 0, 0.3);
   border-radius: 20px;
-  padding: 25px;
+  padding: 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  margin-bottom: 25px;
+  margin-bottom: 25px; /* Espaço entre os cards */
+  transition: all 0.3s ease;
+}
+
+/* GRID DE PROJETOS - SEGURO E RESPONSIVO */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Se ajusta sozinho */
+  gap: 20px; /* Espaço entre os cards do projeto */
+  width: 100%;
+}
+
+/* --- SOLUÇÃO DO PROBLEMA DO ÍCONE GIGANTE --- */
+.project-tags {
+  display: flex;
+  gap: 12px; /* Espaço entre as linguagens */
+  margin: 15px 0; /* Margem top/bottom para separar do texto */
+  align-items: center;
+}
+
+/* Controla o tamanho exato dos ícones dentro do projeto */
+.tag-icon {
+  width: 20px !important; /* Tamanho pequeno e fixo */
+  height: 20px !important;
+  object-fit: contain; /* Garante que o ícone não distorça */
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.2));
+  transition: transform 0.3s ease;
+}
+
+/* Efeito de zoom no hover que você pediu */
+.tag-icon:hover {
+  transform: scale(1.4);
+}
+/* --------------------------------------------- */
+
+/* BOTÃO DO PROJETO */
+.btn-project {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-project:hover {
+  background: #FF007F;
+  border-color: #FF007F;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 0, 127, 0.4);
 }
 
 .move-badge {
-  padding: 8px 16px;
+  padding: 6px 14px;
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   margin-right: 10px;
   display: inline-block;
+}
+
+/* FOOTER RESPONSIVO */
+footer {
+  padding: 60px 10%;
+  text-align: center;
+  opacity: 0.4;
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+/* RESPONSIVO PARA CELULAR */
+@media (max-width: 900px) {
+  .main-layout { flex-direction: column; padding: 100px 15px; }
+  .left-column { width: 100%; position: relative; top: 0; margin-bottom: 40px; }
 }
