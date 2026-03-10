@@ -71,7 +71,7 @@ function App() {
               <h4>Assistente de Suporte TI - Hospital Santa Casa de Porto Alegre</h4>
               <ul style={{ fontSize: '0.85rem', paddingLeft: '20px', opacity: 0.8 }}>
                 <li>Sistema TASY;</li>
-                <li>Manutenção de impressorass, telefones e computadores;</li>
+                <li>Manutenção de impressoras, telefones e computadores;</li>
                 <li>Abertura de Ordens de Serviço para a equipe de sistemas e suporte;</li>
                 <li>Planilhas Excel e pacote Office;</li>
                 <li>Criação de usuários, grupos de e-mail e atendimento via WhatsApp bot.</li>
@@ -95,36 +95,56 @@ function App() {
               <div className="glass-card">
                 <h4>Sistema de Gestão de Viagens</h4>
                 <p style={{ fontSize: '0.8rem', opacity: 0.8 }}>Sistema para gerenciamento de itinerários e destinos.</p>
-                <div style={{ marginTop: '10px' }}>
-                  <span className="tag">Java</span><span className="tag"> - </span><span className="tag">React</span>
-                </div>
+                <div className="project-tags">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" className="tag-icon" title="Java" alt="Java"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="tag-icon" title="React" alt="React"/>
+                  </div>
+                    <a href="https://github.com/ArthurFaleiro/Sistema-de-Viagens" target="_blank" rel="noreferrer" className="btn-project">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="16" style={{ filter: 'invert(1)', marginRight: '8px' }} alt=""/>
+                  Acessar projeto
+                </a>
               </div>
               
               <div className="glass-card">
                 <h4>Sistema de Gestão de Petshop</h4>
                 <p style={{ fontSize: '0.8rem', opacity: 0.8 }}>Sistema para gerenciamento de produtos e serviços de uma petshop.</p>
-                <div style={{ marginTop: '10px' }}>
-                  <span className="tag">Java</span><span className="tag"> - </span><span className="tag">React</span>
-                </div>
+                <div className="project-tags">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" className="tag-icon" title="Java" alt="Java"/>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="tag-icon" title="React" alt="React"/>
+                    </div>
+                          <a href="https://github.com/ArthurFaleiro/Sistema-de-Petshop" target="_blank" rel="noreferrer" className="btn-project">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="16" style={{ filter: 'invert(1)', marginRight: '8px' }} alt=""/>
+                  Acessar projeto
+                </a>
               </div>
 
               <div className="glass-card">
                 <h4>Sistema de Concessionária de Veículos StreetWise</h4>
-                <p style={{ fontSize: '0.8rem', opacity: 0.8 }}>Sistema padrão para uma concessionária fictícia de veículos elétricos.</p>
-                <div style={{ marginTop: '10px' }}>
-                  <span className="tag">HTML</span><span className="tag"> - </span><span className="tag">React</span>
-                </div>
+               <p style={{ fontSize: '0.8rem', opacity: 0.8 }}>Sistema padrão para uma concessionária fictícia de veículos elétricos.</p>
+                  <div className="project-tags">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" className="tag-icon" title="HTML5" alt="HTML"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="tag-icon" title="React" alt="React"/>
+                          </div>
+                              <a href="https://github.com/ArthurFaleiro/Sistema-StreetWise" target="_blank" rel="noreferrer" className="btn-project">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="16" style={{ filter: 'invert(1)', marginRight: '8px' }} alt=""/>
+                  Acessar projeto
+                </a>
               </div>
 
-              <div className="glass-card">
-                <h4>Power BI de Clash Royale</h4>
-                <p style={{ fontSize: '0.8rem', opacity: 0.8 }}>Dashboard com informações das cartas do jogo Clash Royale.</p>
-                <div style={{ marginTop: '10px' }}>
-                  <span className="tag">Power BI</span><span className="tag"> - </span><span className="tag">Data Analytics</span>
-                </div>
-              </div>
+          <div className="glass-card">
+            <h4>Power BI de Clash Royale</h4>
+            <p style={{ fontSize: '0.8rem', opacity: 0.8 }}>Dashboard com informações das cartas do jogo Clash Royale.</p>
+            <div className="project-tags">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/3840px-New_Power_BI_Logo.svg.png" className="tag-icon" title="Power BI" alt="PBI"/>
             </div>
+            <a href="https://github.com/ArthurFaleiro/ClashRoyale" target="_blank" rel="noreferrer" className="btn-project">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="16" style={{ filter: 'invert(1)', marginRight: '8px' }} alt=""/>
+              Acessar projeto
+            </a>
           </div>
+
+        </div>
+      </div>
 
           {/* SEÇÃO DE HABILIDADES */}
           <div id="habilidades" style={{ marginTop: '50px' }}>
