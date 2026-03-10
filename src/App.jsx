@@ -69,8 +69,8 @@ function App() {
               <p style={{ color: '#FF007F', fontSize: '0.75rem', fontWeight: 'bold' }}>2024 - MOMENTO</p>
               <h4>Assistente de Suporte TI - Santa Casa de Porto Alegre</h4>
               <ul style={{ fontSize: '0.85rem', paddingLeft: '20px', opacity: 0.8, lineHeight: '1.6' }}>
-                <li>Suporte ao sistema TASY e manutenção de hardware[cite: 10, 93].</li>
-                <li>Abertura de ordens de serviço e gestão de usuários[cite: 10, 93].</li>
+                <li>Suporte ao sistema TASY e manutenção de hardware.</li>
+                <li>Abertura de ordens de serviço e gestão de usuários.</li>
               </ul>
             </div>
 
@@ -79,8 +79,8 @@ function App() {
               <p style={{ color: '#FF007F', fontSize: '0.75rem', fontWeight: 'bold' }}>2022 - 2023</p>
               <h4>Jovem Aprendiz - Appmax</h4>
               <ul style={{ fontSize: '0.85rem', paddingLeft: '20px', opacity: 0.8, lineHeight: '1.6' }}>
-                <li>Credenciamento de Empresas (3 meses)[cite: 9, 90].</li>
-                <li>Atuação no setor Jurídico / Débito e Crédito (1 ano e 9 meses)[cite: 9, 91].</li>
+                <li>Credenciamento de Empresas (3 meses).</li>
+                <li>Atuação no setor Jurídico / Débito e Crédito (1 ano e 9 meses).</li>
               </ul>
             </div>
           </div>
